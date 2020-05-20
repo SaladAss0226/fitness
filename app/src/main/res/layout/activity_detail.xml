@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_show_data"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/rv_item_style"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_move_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="俯身飛鳥"
+            android:textColor="@color/mainColor"
+            android:textSize="32sp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/tv_muscle_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="目標肌群:"
+            android:textColor="@color/mainColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_move_name"
+            app:layout_constraintBottom_toTopOf="@id/tv_set_num"
+            />
+        <TextView
+            android:id="@+id/tv_set_num"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="組數:"
+            android:textColor="@color/mainColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_muscle_name"
+            app:layout_constraintBottom_toTopOf="@id/tv_frequency"
+            />
+        <TextView
+            android:id="@+id/tv_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="次數:"
+            android:textColor="@color/mainColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_set_num"
+            app:layout_constraintBottom_toTopOf="@id/tv_weight"
+            />
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="重量:"
+            android:textColor="@color/mainColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_frequency"
+            app:layout_constraintBottom_toTopOf="@id/tv_last_set"
+            />
+        <TextView
+            android:id="@+id/tv_last_set"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="最後一組直到RPE:"
+            android:textColor="@color/mainColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_weight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_edit_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:text="編輯"
+        android:textSize="18sp"
+        android:textColor="@color/mainColor"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
